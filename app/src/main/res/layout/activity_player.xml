@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp"
+        app:srcCompat="@drawable/gtn_no_bg_100_100" />
+
+    <TextView
+        android:id="@+id/first_name_label"
+        style="@style/textview_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name" />
+
+    <TextView
+        android:id="@+id/first_name"
+        style="@style/textview_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:text="Freddy" />
+
+    <TextView
+        android:id="@+id/second_name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/second_name"
+        style="@style/textview_label"/>
+
+    <TextView
+        android:id="@+id/second_name"
+        style="@style/textview_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Spades" />
+
+    <TextView
+        android:id="@+id/age_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        style="@style/textview_label"/>
+
+    <TextView
+        android:id="@+id/age"
+        style="@style/textview_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="24" />
+
+    <TextView
+        android:id="@+id/height_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/height"
+        style="@style/textview_label"/>
+
+    <TextView
+        android:id="@+id/height"
+        style="@style/textview_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="6ft 1" />
+</LinearLayout>

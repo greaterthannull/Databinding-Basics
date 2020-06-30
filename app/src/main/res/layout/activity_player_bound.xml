@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="player"
+            type="com.example.databinding.model.Player" />
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:paddingBottom="20dp"
+            app:srcCompat="@drawable/gtn_no_bg_100_100" />
+
+        <TextView
+            style="@style/textview_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/first_name" />
+
+        <TextView
+            android:text="@{player.firstName}"
+            style="@style/textview_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            tools:text="Freddy" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/second_name"
+            style="@style/textview_label"/>
+
+        <TextView
+            style="@style/textview_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Spades"
+            android:text="@{player.secondName}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            style="@style/textview_label"/>
+
+        <TextView
+            style="@style/textview_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="24"
+            android:text="@{Integer.toString(player.age)}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/height"
+            style="@style/textview_label"/>
+
+        <TextView
+            style="@style/textview_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="6ft 1"
+            android:text="@{player.height}"/>
+    </LinearLayout>
+</layout>

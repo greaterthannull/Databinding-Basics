@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DatabindingBasics</string>
+    <string name="title_no_databinding">"No Databinding"</string>
+    <string name="title_databinding">"Databinding"</string>
+
+    <string name="first_name">First Name</string>
+    <string name="second_name">Second Name</string>
+    <string name="age">Age</string>
+    <string name="height">Height</string>
+    <string name="games_played">Games played</string>
+    <string name="goals_scored">Goals scored</string>
+    <string name="position">Position</string>
+</resources>
